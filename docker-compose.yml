@@ -1,0 +1,16 @@
+version: '3.6'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: ENEM
+      POSTGRES_PASSWORD: pw_somos
+    ports:
+      - 5432:5432 
+  app-python:
+    build: .
+    depends_on:
+      - db
