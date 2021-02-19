@@ -7,7 +7,7 @@ services:
     restart: always
     environment:
       POSTGRES_DB: ENEM
-      POSTGRES_PASSWORD: pw_somos
+      POSTGRES_PASSWORD: pw_123
     ports:
       - 5432:5432 
   app-python:
